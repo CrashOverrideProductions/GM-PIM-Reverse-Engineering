@@ -18,28 +18,14 @@ Pinout (Looking At Connector)
     Chassis Ground          - Black/Red
     
     Terminal Definitions (From PCM SIP Manual)
-      PIN 6 - SERIAL DATA (UART) - This is a dedicated line for the Tech 2 scan tool communications. The circuit connects
-the PIM, BCM, and ABS/ECT. The Tech 2 scan tool can talk to each of these modules by sending a message to a
-controller and asking only it to respond. The communication rate is at 8192 baud. The normal voltage on this circuit
-is about 5 volts, but when the Tech 2 scan tool is communicating with a controller, the voltage will vary and if read
-with a DMM may read about 2.5 volts.
+      PIN 6 - SERIAL DATA (UART) - This is a dedicated line for the Tech 2 scan tool communications. The circuit connects the PIM, BCM, and ABS/ECT. The Tech 2 scan tool can talk to each of these modules by sending a message to a controller and asking only it to respond. The communication rate is at 8192 baud. The normal voltage on this circuit is about 5 volts, but when the Tech 2 scan tool is communicating with a controller, the voltage will vary and if readwith a DMM may read about 2.5 volts.
 
-      PIN 7 - SERIAL DATA (CLASS II) - This is a dedicated line for the Tech 2 scan tool communication. The circuit
-connects the PCM, PIM, ABS/ETC, and BCM. The Tech 2 scan tool can talk to each of these modules by sending a
-message to a controller and asking only it to respond. The communication carried on Class II data streams are
-prioritised. The normal voltage on this line is 0 volts, but when the Tech 2 scan tool is connected, the voltage will
-about 7 volts indicating communication.
+      PIN 7 - SERIAL DATA (CLASS II) - This is a dedicated line for the Tech 2 scan tool communication. The circuit connects the PCM, PIM, ABS/ETC, and BCM. The Tech 2 scan tool can talk to each of these modules by sending a message to a controller and asking only it to respond. The communication carried on Class II data streams are prioritised. The normal voltage on this line is 0 volts, but when the Tech 2 scan tool is connected, the voltage will about 7 volts indicating communication.
 
-      PIN 8 - STARTER RELAY CONTROL - When the PIM receives the proper Theft Deterrent signal from the BCM, the
-PIM will supply a earth signal to the Start Relay. This will allow the vehicle to crank.
-If a improper Theft Deterrent signal is sensed by the PIM, then the PIM will not supply a earth signal to the Start
-Relay, and the PIM will not send a message to the PCM to allow fuel injection.
+      PIN 8 - STARTER RELAY CONTROL - When the PIM receives the proper Theft Deterrent signal from the BCM, the PIM will supply a earth signal to the Start Relay. This will allow the vehicle to crank. If a improper Theft Deterrent signal is sensed by the PIM, then the PIM will not supply a earth signal to the Start Relay, and the PIM will not send a message to the PCM to allow fuel injection.
 
-      PIN 11 - DIAGNOSTIC TEST ENABLE - This terminal is connected to the DLC diagnostic test enable terminal. When
-the diagnostic test terminal is not earthed, this terminal will have 5 volts on it. When the DLC diagnostic test enable
-terminal is earthed, the resulting zero voltage at the PIM will instruct the PCM to operate in Diagnostic Mode.
+      PIN 11 - DIAGNOSTIC TEST ENABLE - This terminal is connected to the DLC diagnostic test enable terminal. When the diagnostic test terminal is not earthed, this terminal will have 5 volts on it. When the DLC diagnostic test enable terminal is earthed, the resulting zero voltage at the PIM will instruct the PCM to operate in Diagnostic Mode.
 
-      PIN 15 - IGNITION FEED - This is the power supply to the PIM from the ignition switch. The voltage should equal the
-battery voltage when the key is in either the RUN, or CRANK position.
+      PIN 15 - IGNITION FEED - This is the power supply to the PIM from the ignition switch. The voltage should equal the battery voltage when the key is in either the RUN, or CRANK position.
 
       PIN 16 - SYSTEM EARTH - This terminal should have zero volts. This circuit is connected directly to the engine earth.
