@@ -30,8 +30,32 @@ PIM Normal Mode
         PRNDL Switch                  Invalid / P,R,N,D,3,2,1
         Commanded Gear                P/N, R, 1
         PCM Chime                     YES / NO
-        
-Mode Descriptions and Limits
+
+PIM Scan Tool Data Display
+                                                                  |---Typical Data Value(3)-----------------|
+      Scan Position (1)              Units Displayed (2)          Ignition On (4)         Engine Running (5)
+        Starter Relay                 OFF / ON                      OFF                     OFF
+        Fuel Continue                 OFF / ON                      ON                      ON
+        Fuel Disable Time-out         OFF / ON                      OFF                     OFF
+        Fuel Disable Cycle Ignition   OFF / ON                      OFF                     OFF
+        Auto Learn Active             OFF / ON                      OFF                     OFF
+        PIM Theft Deterrent Comm Lost OFF / ON                      OFF                     OFF
+        Password Learning             OFF / ON                      OFF                     OFF
+        PIM DTC Status                NO DTC / DTC Set              NO DTC                  NO DTC
+        Software Version              4 Digit Number                5.5                     5.5
+        PIM Comm Disable              OFF / ON                      OFF                     OFF
+        A/C Clutch                    OFF / ON                      OFF                     OFF
+        Check Powertrain Lamp         OFF / ON                      ON                      OFF
+        Low Coolant Level             YES / NO                      NO                      NO
+        Oil Pressure Sensor           OFF / ON                      OFF                     ON
+        Engine Oil Change             OK / Service Requested        OK                      OK
+        Engine Oil Life Reset         OFF / ON                      OFF                     OFF
+        Shift Pattern                 Economy / Power               Economy                 Economy
+        Low Speed Fan Request         OFF / ON                      OFF                     OFF
+        Low Speed Fan Run On          YES / NO                      NO                      NO
+      
+            
+Normal Mode Descriptions and Limits
   A list of explanations for each data message displayed on the Tech 2 scan tool is listed below. This information will assist in diagnosing emission or driveability problems. The displays can be viewed while the vehicle is being driven. Refer to the Powertrain OBD System Check for additional information.
   
   ENGINE SPEED: Tech 2 Displays a range of 0 to 9999 RPM
@@ -121,3 +145,52 @@ Mode Descriptions and Limits
     
   PCM CHIME: Tech 2 Displays "NO" or "YES"
     This is a indication to the instrument panel allowing the instrument panel to chime if a problem or fault is detected.
+    
+Scan Tool Mode Descriptions and Limits
+START RELAY: Tech 2 Displays "OFF" or "ON"
+The scan tool displays ON when the Start Relay is enabled.
+FUEL CONTINUE: Tech 2 Displays "OFF" or "ON"
+Tech 2 displays ON if the proper Theft Deterrent signal is sent from the PIM to the PCM for fuel control.
+FUEL DISABLE TIME-OUT: Tech 2 Displays "OFF" or "ON"
+Tech 2 displays ON when the PCM sends a message back to the PIM indicating PCM is satisfied with Theft
+Deterrent signal and is allowing fuel injection.
+FUEL DISABLE CYCLE IGN: Tech 2 Displays "OFF" or "ON"
+Tech 2 displays OFF when the PCM security has failed. Engine will not be fueled until the ignition has been cycled
+from ON to OFF to ON.
+AUTO LEARN ACTIVE: Tech 2 Displays "YES" or "NO"
+Tech 2 displays YES if the PCM is in automatic password learning mode.
+PIM THEFT DETERRENT COMMUNICATION LOST: Tech 2 Displays "YES" or "NO"
+Tech 2 indicates YES if there is a Theft Deterrent communication loss between the PIM and PCM.
+PASSWORD LEARNING: Tech 2 Displays "YES" or "NO"
+Tech 2 displays YES if the PIM is in a current Password Learn mode. PCM will learn CLASS II security code from
+PIM on the next ignition cycle.
+PCM DTC STATUS: Tech 2 Displays “NO DTCs” or “DTCs SET”
+Indicates if a DTC is set. This does not indicate what DTC is set, just informs that DTC (s) are or are not set.
+PIM DTCs STATUS: Tech 2 Displays “NO DTCs” or “DTCs SET”
+Indicates if a DTC is set. This does not indicate what DTC is set, just informs that DTC (s) are or are not set.
+SOFTWARE VERSION: Tech 2 Displays Number of Software ID in PCM.
+PIM COMMUNICATION DISABLE - Tech 2 Displays "ON" or "OFF"
+A/C CLUTCH: Tech 2 Displays "ON" or "OFF"
+Represents the commanded state of the A/C clutch control relay. Clutch should be engaged when ON is displayed.
+CHECK POWERTRAIN MALFUNCTION INDICATOR LAMP (MIL) or Check Powertrain Lamp (CPL): Tech 2
+Displays "OFF" or "ON"
+Indicated if the instrument panel (CPL) is ON or OFF.
+LOW COOLANT LEVEL: Tech 2 Displays "NO" or "YES"
+This is an indication to the PCM that the coolant level is low. If the coolant level is low, the PCM will turn on the
+Low Coolant Lamp.
+OIL PRESSURE SENSOR: Tech 2 Displays "OFF" or "ON"
+This is an indication to the PCM if the oil pressure is low. If the oil pressure is low, the PCM will turn ON a Low Oil
+Warning Lamp.
+ENGINE OIL CHANGE: The Tech 2 Displays “OKAY” or “SERVICE REQUESTED”
+The scan tool will display the status of the engine oil change condition.
+ENGINE OIL LIFE RESET: Tech 2 Displays "OFF" or "ON"
+The scan tool will display ON when the SERVICE REQUESTED is indicated on the instrument panel. The reset
+function can be performed at the instrument panel trip computer.
+SHIFT PATTERN: Tech 2 Displays “ECONOMY” or “POWER”
+This display shows the state of the ECONOMY/POWER switch.
+LOW SPEED FAN REQUEST: Tech 2 Displays "ON" or "OFF”
+Indicates if the engine cooling fan low speed relay has been commanded ON or OFF.
+LOW FAN RUN ON: Tech 2 Displays "NO" or "YES"
+The scan tool will indicate NO if the PCM is commanding the BCM to enable the Low Fan Relay when the key is
+turned OFF.
+
