@@ -1,0 +1,123 @@
+PIM Normal Mode
+                                                                  |---Typical Data Value(3)-----------------|
+      Scan Position (1)              Units Displayed (2)          Ignition On (4)         Engine Running (5)
+        Engine Speed                  RPM                           0 RPM                   Engine RPM
+        Coolant Temperature           Degrees C                     Varies                  Varies
+        Barometric Pressure           kPa                           0 - 200 kPa             0 - 200 kPa
+        Vehicle Speed                 km/h                          0 km/h                  Vehicle Speed
+        A/C Clutch                    ON / OFF                      Varies                  Varies
+        A/C Pressure                  kPa                           896 kPa                 800 - 1000 kPa (A/C Off)
+                                                                                            1600 - 1900 kPa (A/C On)
+        Low Speed Fan Request         ON / OFF                      Varies                  Varies
+        Low Fan Run ON                YES / NO                      Varies                  Varies
+        Theft Status                  No Start / Start              Start                   Start
+        PCM DTC Status                No DTC / DTC Set              No DTCs                 No DTCs
+        Check Powertrain Lamp         OFF / ON                      ON                      OFF
+        Throttle Failure              YES / NO                      NO                      NO
+        MAP Failure                   YES / NO                      NO                      NO
+        Fuel Used                     L                             00.00                   1 - 2 L/Hour
+        Fuel Flow Rate                                              00.00                   1 - 2 L/Hour
+        Engine Type                   V6, V8, V6 SC, V8 Gen3
+        Transmission Coding           Manual / Auto
+        Fuel Type                     Petrol / LPG
+        Engine Oil Change             OK / Serivce Required
+        Transmission Oil Change       OK / Service Required
+        Shift Pattern                 Economy / Power
+        Throttle Position             0 - 100 %
+        High Coolant Temperature      YES / NO
+        Low Coolant Level             YES / NO
+        Oil Pressure Sender           OFF / ON
+        PRNDL Switch                  Invalid / P,R,N,D,3,2,1
+        Commanded Gear                P/N, R, 1
+        PCM Chime                     YES / NO
+        
+Mode Descriptions and Limits
+  A list of explanations for each data message displayed on the Tech 2 scan tool is listed below. This information will assist in diagnosing emission or driveability problems. The displays can be viewed while the vehicle is being driven. Refer to the Powertrain OBD System Check for additional information.
+  
+  ENGINE SPEED: Tech 2 Displays a range of 0 to 9999 RPM
+    The engine speed is computed by the PCM from the fuel control reference input. It should remain close to desired idle speed under various engine loads with engine idling.
+    
+  COOLANT TEMPERATURE: Tech 2 Displays a range of -39°C to 140°C (-38°F to 284°F)
+    The Engine Coolant Temperature (ECT) sensor is mounted in the cylinder head of the left bank. The PCM apples 5.0 volts to the ECT sensor circuit. The sensor is a thermistor which changes internal resistance as temperature changes. When the sensor is cold (internal resistance high), the PCM monitors a high signal voltage and interprets the voltage as a cold engine. As the sensor warms (internal resistance decreases), the voltage signal decreases and the PCM interprets the lower voltage as a warm engine.
+    
+  BAROMETRIC PRESSURE (BARO) SENSOR: Tech 2 Displays a range of 0 to 200 kPa / 0 to 5.0 volts
+    The BARO reading is displayed in volts and kPa and represents the altitude of the vehicle for the transmission control. At sea level the BARO reading is about 4.7 to 4.9 volts. At 3048 meters (10,000 feet) the BARO reading is about 2.5 to 3.0 volts.* ( Only with GEN III V8 Engine)
+  
+  VEHICLE SPEED: Tech 2 Displays a range of 0 to 255 km/h
+      The vehicle speed sensor signal is converted into km/h and mph for display.
+  
+  A/C CLUTCH: Tech 2 Displays "ON" or "OFF"
+    Represents the commanded state of the A/C clutch control relay. Clutch should be engaged when ON is displayed.
+
+  A/C PRESSURE: Tech 2 Displays a range of 0 to 3195 kPa
+    The kPa displayed indicates that the PCM is monitoring an A/C Refrigerant Pressure signal voltage which is too high or too low to allow the A/C compressor clutch to engage.
+  
+  LOW SPEED FAN REQUEST: Tech 2 Displays "ON" or "OFF
+    Indicates if the engine cooling fan low speed relay has been commanded ON or OFF.
+
+  LOW FAN RUN ON: Tech 2 Displays "NO" or "YES"
+    This indicates if the PCM is requesting the BCM to turn the Low Speed Fan ON at key OFF.
+
+  THEFT STATUS: Tech 2 Displays "NO START" or "START"
+    Indicates the status of the Theft Deterrent System.
+
+  PCM DTC STATUS: Tech 2 Displays "NO DTC(s)" or “DTC SET”
+    Indicates if a DTC is set. This does not indicate what DTC is set, just informs that DTC are or are not set.
+  
+  CHECK POWERTRAIN LAMP (CPL) or MALFUNCTION INDICATOR LAMP (MIL): Tech 2 Displays "OFF" or "ON"
+    Indicated if the instrument panel Malfunction Indicator Lamp is ON or OFF.
+
+  THROTTLE FAILURE: Tech 2 Displays "NO" or "YES"
+    Indicates if the throttle position sensor has failed. This is reported from the PCM to the PIM.
+    * (Only with GEN III V8 Engine)
+
+  MAP FAILURE: Tech 2 Displays "NO" or "YES"
+    Indicates if the Map sensor has failed. This is reported from the PCM to the PIM. 
+    * (Only with GEN III V8 Engine)
+  
+  FUEL USED: Tech 2 Displays a range of 0 to 1000 Litres
+    When the key is turned ON and the engine is running, the PCM will calculate FUEL USED during each ignition cycle.
+
+  FUEL FLOW RATE: Tech 2 Displays a range of 0 to 100 litres
+    Indicates fuel consumption per litres per hour.
+
+  ENGINE TYPE: Tech 2 Displays Engine Type
+    The Tech 2 uses this information for proper Tech 2 scan tool software.
+    
+  TRANSMISSION CODING: Tech 2 Displays “MANUAL” or “AUTOMATIC”
+    The Tech 2 uses this information for proper Tech 2 scan tool software
+  
+  FUEL TYPE: Tech 2 Displays “PETROL” or “LPG”
+    The scan tool will display what fuel type the PCM software is set up for.
+
+  ENGINE OIL CHANGE: The Tech 2 Displays “OKAY” or “SERVICE REQUESTED”
+    The scan tool will display the status of the engine oil change condition.
+
+  TRANSMISSION OIL CHANGE: The Tech 2 Displays “OKAY” or “SERVICE REQUESTED”
+    The scan tool will display the status of the transmission oil change condition.
+
+  SHIFT PATTERN: Tech 2 Displays “ECONOMY” or “POWER”
+    This display shows the state of the ECONOMY/POWER switch.
+
+  THROTTLE POSITION: Tech 2 Displays a range of 0 to 100%
+    Computed by the PCM from TP sensor voltage (Throttle Position) should read 0% at idle and 100% at Wide Open Throttle (WOT). 
+    * (Only with GEN III V8 Engine)
+  
+  HIGH COOLANT TEMPERATURE: Tech 2 Displays "NO" or "YES"
+    This is an indication to the PCM that the engine is running hot.
+  
+  LOW COOLANT LEVEL: Tech 2 Displays "NO" or "YES"
+    This is an indication to the PCM that the coolant level is low, and the PCM will turn on the Low Coolant lamp.
+    * (Only with GEN III V8 Engine)
+
+  OIL PRESSURE SENSOR: Tech 2 Displays "OFF" or "ON"
+    This is an indication to the PCM if the oil pressure is high or low. If the oil pressure is low, the PCM will turn on a Low Oil Warning Lamp.
+    
+  PRNDL SWITCH: Tech 2 Displays “INVALID” or “P, R, N, D, 3, 2, 1”
+    This displays if the vehicle is not equipped with a PRNDL switch (INVALID), or if equipped, indicates what gear the driver has selected.
+  
+  COMMANDED GEAR: Tech 2 Displays “1, 2, 3, 4”
+    The gear that the PCM is commanding the transmission to be in. In PARK, the Tech 2 scan tool will display "1", the commanded state of the shift.
+    
+  PCM CHIME: Tech 2 Displays "NO" or "YES"
+    This is a indication to the instrument panel allowing the instrument panel to chime if a problem or fault is detected.
