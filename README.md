@@ -8,9 +8,6 @@ Reverse Engineering and Technical Documentation for utilising Mini Computing Boa
 
 ![alt text](https://github.com/CrashOverrideProductions/GM-PIM-Reverse-Engineering/blob/master/ReadImages/ccbyncsa.jpg?raw=true)
 
-Attribution | Non-commercial | Share Alike 4.0 International 
-(CC BY-NC-SA 4.0)
-
 Under the following terms:
 -	Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 -	Non-commercial — You may not use the material for commercial purposes.
