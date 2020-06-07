@@ -17,5 +17,6 @@ Under the following terms:
 No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
 
 ### Disclaimer
-Some parts in this research may originate from various specifications and are only used to provide an underlying principle of the various Communication Protocols used along with the most popular OBDII protocols used in Engine Conversions (Can Bus and J1850), for an in depth view of these specifications a copy of the standard can be purchased from SAE International https://www.sae.org  Or International Organization for Standardization https://www.iso.org
+- Some parts in this research may originate from various specifications and are only used to provide an underlying principle of the various Communication Protocols used along with the most popular OBDII protocols used in Engine Conversions (Can Bus and J1850), for an in depth view of these specifications a copy of the standard can be purchased from SAE International https://www.sae.org  Or International Organization for Standardization https://www.iso.org
+
 
