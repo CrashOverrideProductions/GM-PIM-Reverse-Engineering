@@ -1,9 +1,12 @@
-Collection of bits and bobs used in the proof of concept stage
+# Prototype Something Something Dark Side
+Collection of Info and Sketches for Prototyping PIM Emulation 
+
+Mostly just 'Proof of Concept' and early thought processes  
 
 It is not recomended to use any of this in a final product - only as a jumping off point
 
 
-## SpeedoDrive.ino
+## SpeedoDrive-V1.ino
     Currently Testing on Arduino Uno R3
     Plan is to use a ATTINY202. 
     Still to develop KPH speed input.
@@ -16,3 +19,8 @@ It is not recomended to use any of this in a final product - only as a jumping o
      20 KPH      20 KPH.
      10 KPH      11 KPH.
       5 KPH       3 KPH.
+
+## SpeedoDrive-V2.ino
+     Almost the same as V1
+     
+     Mainly start tidying code and adding lots of useful comments
