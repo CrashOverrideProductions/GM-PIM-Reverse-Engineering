@@ -33,12 +33,5 @@ int Calculate_ALDLChecksum(uint8_t BroadcastFrame[], int arraySize){
   }
 
 // REWRITE THIS BEFORE PUBLIC VIEW
-int SetBit(int Value, uint8_t Bit, boolean OnOff ){
-  int num = uint8_t(round(Bit));
-        if (OnOff){
-            Value = (Value | num);
-            return Value;
-        }
-        Value = (Value & !num);
-        return Value;
+int SetBit(int Value, Bit, boolean OnOff ){
   }
