@@ -8,7 +8,7 @@ It is not recomended to use any of this in a final product - only as a jumping o
 
 ## SpeedoDrive-V1.ino
     Currently Testing on Arduino Uno R3
-    Plan is to use a ATTINY202. 
+    Plan is to use a ATMega328P. 
     Still to develop KPH speed input.
     
     Tests Good - small discrepencies in speed.
