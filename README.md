@@ -1,6 +1,6 @@
-## GM Powertrain Interface Module <img alt="" align="right" src="https://img.shields.io/badge/IDE-Visual%20Studio-informational?style=flat&logo=Visual%20Studio&logoColor=white&color=5C2D91" /> <img alt="" align="right" src="https://img.shields.io/badge/Platform-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=00979D" /> <img alt="" align="right" src="https://img.shields.io/badge/%20-Famicom-informational?style=flat&logo=Nintendo&logoColor=white&color=8F8F8F" />
+## GM Powertrain Interface Module <img alt="" align="right" src="https://img.shields.io/badge/IDE-Visual%20Studio-informational?style=flat&logo=Visual%20Studio&logoColor=white&color=5C2D91" /> <img alt="" align="right" src="https://img.shields.io/badge/Platform-ESP32/STM32-informational?style=flat&logo=Arduino&logoColor=white&color=00979D" /> <img alt="" align="right" src="https://img.shields.io/badge/%20-Holden-informational?style=flat&logoColor=white&color=8F8F8F" />
 
-### **Project**: Reverse Engineering and Emulation of a PIM using a Mini Computing Board <img alt="" align="right" src="https://img.shields.io/badge/Status-Research%20Phase-informational?style=flat&logoColor=white&color=73398D" />
+### **Project**: Emulation of a PIM using a Mini Computing Board <img alt="" align="right" src="https://img.shields.io/badge/Status-Research%20Phase-informational?style=flat&logoColor=white&color=73398D" />
 
 
 <!-- Repo Cover Image -->
