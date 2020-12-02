@@ -9,7 +9,7 @@
 </p>
 
 <!-- Repo Stats -->
-<img align="center" src="https://img.shields.io/github/commit-activity/m/CrashOverrideProductions/GM--PIM--Reverse--Engineering"> <img align="center" src="https://img.shields.io/github/last-commit/CrashOverrideProductions/GM--PIM--Reverse--Engineering"> <img align="center" src="https://img.shields.io/github/languages/code-size/CrashOverrideProductions/GM--PIM--Reverse--Engineering"> <img align="center" src="https://img.shields.io/github/directory-file-count/CrashOverrideProductions/GM--PIM--Reverse--Engineering">
+<img align="center" src="https://img.shields.io/github/commit-activity/m/CrashOverrideProductions/GM-PIM-Reverse-Engineering"> <img align="center" src="https://img.shields.io/github/last-commit/CrashOverrideProductions/GM-PIM-Reverse-Engineering"> <img align="center" src="https://img.shields.io/github/languages/code-size/CrashOverrideProductions/GM-PIM-Reverse-Engineering"> <img align="center" src="https://img.shields.io/github/directory-file-count/CrashOverrideProductions/GM-PIM-Reverse-Engineering">
 
 <!-- Other Intro -->
 ### What is a Powertrain Interface Module (PIM)
