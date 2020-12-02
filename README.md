@@ -13,7 +13,7 @@
 
 <!-- Other Intro -->
 ### What is a Powertrain Interface Module (PIM)
-The Powertrain Interface Module (PIM) fitted to Holden VY and VZ models acts and a communication gateway between the Body Control Module (BCM) and Engine Control Module (ECM). 
+The Powertrain Interface Module (PIM) fitted to Holden VT, VX, VY and VZ models acts and a communication gateway between the GM-UART (ALDL) Data Bus and the J1850VPW/CAN (OBDII) Data Bus
 
 The PIM is also part of theft deterrent authentication process or immobiliser system. 
 
